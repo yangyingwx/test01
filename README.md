@@ -55,3 +55,12 @@
 
 * <a href="http://getbootstrap.com/css/">Bootstrap CSS</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap组件</a>
+
+### 优化过程
+* 图片压缩，压缩了最大的那张图片
+* css媒体查询
+* font的那个css链接放到了页面最下面，就不阻塞渲染了，不知道为什么
+* script链接用async,也放到页面最下面
+* style.css用内联
+* main.js中有两处循环里访问了offsetWidth属性，拿到循环外部
+
